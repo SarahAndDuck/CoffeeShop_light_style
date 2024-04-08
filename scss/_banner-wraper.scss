@@ -1,0 +1,55 @@
+.banner-wraper {
+  position: relative;
+  overflow: hidden;
+  background-color: #eee4dc;
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 261px;
+    height: 411px;
+    content: "";
+    display: block;
+    background: url("../src/image/left-banner-decor.png") 0 0 / contain
+      no-repeat;
+  }
+  &::before {
+    position: absolute;
+    transform: rotate(169deg);
+    top: -40px;
+    right: -15px;
+    width: 261px;
+    height: 411px;
+    content: "";
+    display: block;
+    background: url("../src/image/left-banner-decor.png") 0 0 / contain
+      no-repeat;
+  }
+}
+@media (max-width: 1599px) {
+  .banner-wraper {
+    &::after {
+      opacity: 0.4;
+    }
+    &::before {
+      opacity: 0.4;
+    }
+  }
+}
+
+@media (max-width: 1125px) {
+  .banner-wraper {
+    &::after {
+      height: 311px;
+    }
+    &::before {
+      height: 311px;
+    }
+  }
+}
+
+@media (max-width: 972px) {
+}
+
+@media (max-width: 632px) {
+}

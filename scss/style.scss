@@ -1,0 +1,166 @@
+// Название	font-weight
+// Thin / Hair	100
+// Extra Light	200
+// Light	300
+// Regular	400
+// Medium	500
+// Semi Bold	600
+// Bold	700
+// Extra Bold	800
+// Black / Heavy / Ultra	900
+
+:root {
+  --font-family: "Poppins", sans-serif;
+  --second-family: "Fahkwang", sans-serif;
+  --third-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.container {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.logo {
+  flex: 0 0 auto;
+  display: block;
+  width: 134px;
+  height: 75px;
+  img {
+    display: block;
+    width: 134px;
+    height: auto;
+  }
+}
+.main {
+  flex: 1 1 auto;
+}
+.section {
+  padding: 120px 0;
+}
+
+.title {
+  display: inline;
+  position: relative;
+  padding-right: 40px;
+  color: #000000;
+  font-family: "Fahkwang", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 127.777%;
+  font-size: 18px;
+  &::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 28px;
+    background-color: #9b6842;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.subtitle {
+  font-family: "Fahkwang", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 130%;
+  font-size: 42px;
+  color: #000000;
+}
+
+.text {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 16px;
+  color: #000000;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Fahkwang", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 131.25%;
+  font-size: 16px;
+  transition: 0.3s ease 0s;
+  padding: 15px 25px;
+  border: 1px solid #3d3017;
+}
+.btn_dark {
+  background-color: #3d3017;
+  transition: 0.3s ease 0s;
+  color: #ffffff;
+}
+.btn-light {
+  background-color: transparent;
+  transition: 0.3s ease 0s;
+  color: #3d3017;
+}
+
+@media (hover: hover) {
+  .btn_dark:hover {
+    background-color: transparent;
+    color: #3d3017;
+    transition: 0.3s ease 0s;
+  }
+  .btn-light:hover {
+    background-color: #3d3017;
+    color: #ffffff;
+    transition: 0.3s ease 0s;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+@import "reset";
+@import "header";
+@import "about-us";
+@import "testimonial";
+@import "instagram";
+@import "send-email";
+@import "footer";
+@import "shop";
+@import "banner-wraper";
+@import "banner";
+//   @import "booking";
+//   @import "news";
+//   @import "footer";
+@media (max-width: 666px) {
+  .container {
+    padding: 0 10px;
+  }
+  .about-us {
+    &__container {
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul li,
+ol li {
+  list-style-type: none;
+}
+
+img {
+}
+
+button {
+  display: block;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+input {
+  border-width: 0;
+  border-style: none;
+  border-color: none;
+}

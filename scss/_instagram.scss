@@ -1,0 +1,39 @@
+.instagram {
+  background-color: #f9f3ee;
+  // .instagram__top
+  &__top {
+    text-align: center;
+    margin-bottom: 120px;
+  }
+  // .instagram__title
+  &__title {
+    margin-bottom: 2px;
+  }
+
+  // .instagram__subtitle
+
+  &__subtitle {
+    margin-bottom: 43px;
+  }
+  // .instagram__feed
+
+  &__feed {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px 30px;
+  }
+
+  // .instagram__image
+
+  &__image {
+    width: 370px;
+    height: 477px;
+  }
+}
+@media (max-width: 1210px) {
+  .instagram__feed {
+    justify-content: center;
+  }
+}
